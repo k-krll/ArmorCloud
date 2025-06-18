@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработчик C#/.NET для облачной системы управления плоттерами</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .header .subtitle {
+            color: #667eea;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        .salary {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+        }
+        .section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        .requirements ul, .tasks ul {
+            padding-left: 20px;
+        }
+        .requirements li, .tasks li {
+            margin: 8px 0;
+            position: relative;
+        }
+        .requirements li:before, .tasks li:before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+        }
+        .contact {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact h3 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        .urgent {
+            background: linear-gradient(45deg, #ff9a56, #ff6b6b);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin: 15px 0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .company-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .company-info h2 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        .locations {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .location-tag {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        .startup-badge {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Разработчик C#/.NET</h1>
+            <div class="subtitle">Облачная система управления плоттерами</div>
+        </div>
+
+        <div class="urgent">
+            ⚡ СРОЧНО! Интересный проект с перспективой долгосрочного сотрудничества
+        </div>
+
+        <div class="company-info">
+            <div class="startup-badge">🚀 АМБИЦИОЗНЫЙ STARTUP</div>
+            <h2>💼 О компании Armor Cloud</h2>
+            <p><strong>Мы - лидер в сфере защиты мобильных устройств!</strong></p>
+            <p>Специализируемся на производстве защитных покрытий для телефонов с использованием режущих плоттеров. Наша технология позволяет создавать точные лекала для любых моделей смартфонов.</p>
+            
+            <div class="locations">
+                <span class="location-tag">🏢 Москва</span>
+                <span class="location-tag">🏢 Санкт-Петербург</span>
+                <span class="location-tag">🏢 Нижний Новгород</span>
+                <span class="location-tag">🚀 Вся Россия (в планах)</span>
+            </div>
+            
+            <p><strong>Встретить нас можно в торговых центрах!</strong></p>
+            <p>Ищем <strong>внештатного сотрудника-фрилансера</strong> для интересной задачи в ваше портфолио с <strong>рыночной оплатой труда</strong>.</p>
+        </div>
+
+        <div class="salary">
+            💰 Бюджет: 150,000 - 300,000 ₽ (зависит от опыта и качества работы)
+        </div>
+
+        <div class="section">
+            <h2>🎯 О проекте</h2>
+            <p>Разрабатываем <strong>облачную систему для управления режущими плоттерами</strong> в сфере производства защитных покрытий для телефонов. Система уже работает с плоттерами GRAPTHTEC CE7000-40, теперь нужно добавить поддержку <strong>Silhouette Cameo 4</strong>.</p>
+            
+            <div class="highlight">
+                <strong>Что делает система:</strong><br>
+                • Веб-интерфейс для выбора лекал по моделям телефонов<br>
+                • Облачное хранение файлов лекал<br>
+                • Клиентское приложение для управления плоттером<br>
+                • Автоматическая передача заданий на резку
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛠 Технологический стек</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">ASP.NET Core 7.0</span>
+                <span class="tech-tag">SignalR</span>
+                <span class="tech-tag">Entity Framework</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Identity Framework</span>
+                <span class="tech-tag">USB API</span>
+                <span class="tech-tag">Serial Communication</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Задачи</h2>
+            <ul class="tasks">
+                <li>Изучить существующий код серверной части (ASP.NET Core)</li>
+                <li>Разработать клиентское приложение для работы с Cameo 4</li>
+                <li>Интегрировать API Silhouette Cameo 4</li>
+                <li>Адаптировать протокол связи между сервером и клиентом</li>
+                <li>Обеспечить совместимость с существующей системой</li>
+                <li>Провести тестирование и отладку</li>
+                <li>Подготовить документацию по интеграции</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎓 Требования к кандидату</h2>
+            <ul class="requirements">
+                <li><strong>Опыт работы с C#/.NET от 3 лет</strong></li>
+                <li>Знание ASP.NET Core, SignalR, Entity Framework</li>
+                <li>Опыт работы с USB API и Serial Communication</li>
+                <li>Понимание принципов клиент-серверного взаимодействия</li>
+                <li>Умение читать и понимать чужой код</li>
+                <li>Опыт работы с плоттерами/принтерами (желательно)</li>
+                <li>Ответственность и умение работать в команде</li>
+                <li>Готовность к техническому собеседованию</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>💡 Что у нас есть</h2>
+            <ul>
+                <li>✅ Полный исходный код серверной части</li>
+                <li>✅ Документированная архитектура системы</li>
+                <li>✅ Рабочий прототип с GRAPTHTEC</li>
+                <li>✅ Четкое техническое задание</li>
+                <li>✅ Готовность к быстрому старту</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🌟 Преимущества проекта</h2>
+            <ul>
+                <li><strong>Интересная техническая задача</strong> - интеграция с реальным оборудованием</li>
+                <li><strong>Перспектива долгосрочного сотрудничества</strong> - проект развивается</li>
+                <li><strong>Возможность участия в прибыли</strong> - обсуждается опцион</li>
+                <li><strong>Гибкие условия</strong> - удаленная работа, удобный график</li>
+                <li><strong>Быстрый старт</strong> - проект готов к разработке</li>
+                <li><strong>Портфолио</strong> - реальный проект для вашего резюме</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📅 Сроки и условия</h2>
+            <ul>
+                <li><strong>Срок выполнения:</strong> 1-2 месяца</li>
+                <li><strong>Формат работы:</strong> Удаленно, фриланс</li>
+                <li><strong>Оплата:</strong> Поэтапно (30% - 40% - 30%)</li>
+                <li><strong>Начало:</strong> Немедленно после согласования</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h3>📞 Свяжитесь с нами</h3>
+            <p><strong>Готовы обсудить детали проекта?</strong></p>
+            <p>Отправьте резюме и примеры работ с описанием опыта работы с USB API и плоттерами</p>
+            <p><strong>Будем рады познакомиться с профессионалом!</strong></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9em;">
+            <p>💼 Проект для компании Armor Cloud - лидера в сфере защиты мобильных устройств</p>
+        </div>
+    </div>
+</body>
+</html> 
