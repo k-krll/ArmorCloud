@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз для кандидата | ARMOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(45deg, #D743DD, #E047A0);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        #quiz-root {
+            max-width: 480px;
+            margin: 40px auto;
+            padding: 0 10px;
+        }
+        .quiz-card {
+            background: #fff;
+            border-radius: 2vmin;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 2.5rem 1.5rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 0.5s;
+        }
+        h2 {
+            color: #D743DD;
+            margin-top: 0;
+        }
+        .quiz-field {
+            margin-bottom: 1.5rem;
+        }
+        .quiz-field label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+        .quiz-field input[type="text"],
+        .quiz-field input[type="email"],
+        .quiz-field input[type="tel"] {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 1.6vmin;
+            border: 1px solid #D743DD;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .quiz-field input[type="checkbox"] {
+            accent-color: #D743DD;
+        }
+        .quiz-btn {
+            background: linear-gradient(45deg, #D743DD, #E047A0);
+            color: #fff;
+            border: none;
+            border-radius: 1.6vmin;
+            padding: 1rem 2.5rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 0.5rem 0.5rem 0 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(215,67,221,0.08);
+        }
+        .quiz-btn:disabled {
+            background: #eee;
+            color: #aaa;
+            cursor: not-allowed;
+        }
+        .quiz-progress {
+            margin-bottom: 1rem;
+            color: #E047A0;
+            font-weight: 700;
+        }
+        .quiz-question {
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            color: #2c3e50;
+        }
+        .quiz-options {
+            margin-bottom: 1.5rem;
+        }
+        .quiz-option {
+            display: block;
+            margin-bottom: 0.7rem;
+            padding: 0.7rem 1rem;
+            border-radius: 1.2vmin;
+            border: 1px solid #eee;
+            background: #faf7fa;
+            cursor: pointer;
+            transition: border 0.2s;
+        }
+        .quiz-option input[type="radio"] {
+            margin-right: 0.7rem;
+            accent-color: #D743DD;
+        }
+        .quiz-option:hover {
+            border: 1px solid #D743DD;
+        }
+        .quiz-nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+        .quiz-note {
+            color: #E047A0;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 600px) {
+            .quiz-card {
+                padding: 1.2rem 0.5rem;
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-root"></div>
+    <script src="quiz.js"></script>
+</body>
+</html> 

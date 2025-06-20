@@ -1,0 +1,85 @@
+{
+  "id": "2bad2679-8bec-4777-b893-c7f78cec66b3",
+  "name": "Тестовый Пользователь",
+  "email": "test@example.com",
+  "phone": "+7 799 912 34-56",
+  "answers": [
+    {
+      "questionIndex": 0,
+      "selectedOption": 3,
+      "tag": "red",
+      "comment": ""
+    },
+    {
+      "questionIndex": 1,
+      "selectedOption": 0,
+      "tag": "green",
+      "comment": ""
+    },
+    {
+      "questionIndex": 2,
+      "selectedOption": 3,
+      "tag": "red",
+      "comment": ""
+    },
+    {
+      "questionIndex": 3,
+      "selectedOption": 3,
+      "tag": "red",
+      "comment": ""
+    },
+    {
+      "questionIndex": 4,
+      "selectedOption": 2,
+      "tag": "red",
+      "comment": ""
+    },
+    {
+      "questionIndex": 5,
+      "selectedOption": 3,
+      "tag": "red",
+      "comment": ""
+    },
+    {
+      "questionIndex": 6,
+      "selectedOption": 2,
+      "tag": "yellow",
+      "comment": ""
+    },
+    {
+      "questionIndex": 7,
+      "selectedOption": 0,
+      "tag": "green",
+      "comment": ""
+    },
+    {
+      "questionIndex": 8,
+      "selectedOption": 1,
+      "tag": "red",
+      "comment": ""
+    },
+    {
+      "questionIndex": 9,
+      "selectedOption": 0,
+      "tag": "green",
+      "comment": ""
+    },
+    {
+      "questionIndex": 10,
+      "selectedOption": 0,
+      "tag": "yellow",
+      "comment": "Потому что это рабочий способ"
+    }
+  ],
+  "completed": true,
+  "createdAt": "2025-06-19T17:50:25.972Z",
+  "extended": {
+    "age": "20-25",
+    "exp": "3-5",
+    "projects": "3-5",
+    "hardware": "regular",
+    "portfolio": "github.com/test, pet-проекты, задачи",
+    "expectations": "100-150k, удалёнка, гибкий график",
+    "testtask": "yes"
+  }
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техническое собеседование - Armor Cloud</title>
+    <style>
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --text-color: #2c3e50;
+            --background-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .section {
+            margin: 25px 0;
+            padding: 20px;
+            background: var(--background-color);
+            border-radius: 10px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .question h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .answer {
+            margin-top: 10px;
+        }
+
+        .answer textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        .rating {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .rating label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        button {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Техническое собеседование</h1>
+            <p>Разработчик C#/.NET для системы управления плоттерами</p>
+        </div>
+
+        <form id="interviewForm">
+            <!-- C# и .NET -->
+            <div class="section">
+                <h2>C# и .NET Core</h2>
+                
+                <div class="question">
+                    <h3>1. Основы C#</h3>
+                    <ul>
+                        <li>Что такое делегаты и события в C#? Приведите пример использования.</li>
+                        <li>Расскажите о различиях между интерфейсами и абстрактными классами.</li>
+                        <li>Как работает сборщик мусора в .NET?</li>
+                    </ul>
+                    <div class="answer">
+                        <textarea name="csharp_basics" placeholder="Введите ответ..."></textarea>
+                    </div>
+                    <div class="rating">
+                        <label>Оценка: </label>
+                        <label><input type="radio" name="csharp_basics_rating" value="1">1</label>
+                        <label><input type="radio" name="csharp_basics_rating" value="2">2</label>
+                        <label><input type="radio" name="csharp_basics_rating" value="3">3</label>
+                        <label><input type="radio" name="csharp_basics_rating" value="4">4</label>
+                        <label><input type="radio" name="csharp_basics_rating" value="5">5</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>2. ASP.NET Core</h3>
+                    <ul>
+                        <li>Объясните концепцию Middleware в ASP.NET Core.</li>
+                        <li>Как работает Dependency Injection в ASP.NET Core?</li>
+                        <li>Расскажите о жизненном цикле запроса в ASP.NET Core.</li>
+                    </ul>
+                    <div class="answer">
+                        <textarea name="aspnet_core" placeholder="Введите ответ..."></textarea>
+                    </div>
+                    <div class="rating">
+                        <label>Оценка: </label>
+                        <label><input type="radio" name="aspnet_core_rating" value="1">1</label>
+                        <label><input type="radio" name="aspnet_core_rating" value="2">2</label>
+                        <label><input type="radio" name="aspnet_core_rating" value="3">3</label>
+                        <label><input type="radio" name="aspnet_core_rating" value="4">4</label>
+                        <label><input type="radio" name="aspnet_core_rating" value="5">5</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- USB и Serial Communication -->
+            <div class="section">
+                <h2>USB и Serial Communication</h2>
+                
+                <div class="question">
+                    <h3>3. Работа с USB</h3>
+                    <ul>
+                        <li>Как реализовать подключение к USB-устройству в C#?</li>
+                        <li>Расскажите о библиотеке LibUsbDotNet.</li>
+                        <li>Как обрабатывать события подключения/отключения USB-устройств?</li>
+                    </ul>
+                    <div class="answer">
+                        <textarea name="usb_knowledge" placeholder="Введите ответ..."></textarea>
+                    </div>
+                    <div class="rating">
+                        <label>Оценка: </label>
+                        <label><input type="radio" name="usb_knowledge_rating" value="1">1</label>
+                        <label><input type="radio" name="usb_knowledge_rating" value="2">2</label>
+                        <label><input type="radio" name="usb_knowledge_rating" value="3">3</label>
+                        <label><input type="radio" name="usb_knowledge_rating" value="4">4</label>
+                        <label><input type="radio" name="usb_knowledge_rating" value="5">5</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>4. Serial Communication</h3>
+                    <ul>
+                        <li>Как работать с SerialPort в C#?</li>
+                        <li>Какие основные параметры нужно настроить для работы с COM-портом?</li>
+                        <li>Как реализовать асинхронное чтение данных с порта?</li>
+                    </ul>
+                    <div class="answer">
+                        <textarea name="serial_communication" placeholder="Введите ответ..."></textarea>
+                    </div>
+                    <div class="rating">
+                        <label>Оценка: </label>
+                        <label><input type="radio" name="serial_communication_rating" value="1">1</label>
+                        <label><input type="radio" name="serial_communication_rating" value="2">2</label>
+                        <label><input type="radio" name="serial_communication_rating" value="3">3</label>
+                        <label><input type="radio" name="serial_communication_rating" value="4">4</label>
+                        <label><input type="radio" name="serial_communication_rating" value="5">5</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Практические задачи -->
+            <div class="section">
+                <h2>Практические задачи</h2>
+                
+                <div class="question">
+                    <h3>5. Работа с плоттером</h3>
+                    <ul>
+                        <li>Как бы вы реализовали очередь заданий для плоттера?</li>
+                        <li>Как обрабатывать ошибки связи с устройством?</li>
+                        <li>Как организовать кэширование часто используемых лекал?</li>
+                    </ul>
+                    <div class="answer">
+                        <textarea name="plotter_tasks" placeholder="Введите ответ..."></textarea>
+                    </div>
+                    <div class="rating">
+                        <label>Оценка: </label>
+                        <label><input type="radio" name="plotter_tasks_rating" value="1">1</label>
+                        <label><input type="radio" name="plotter_tasks_rating" value="2">2</label>
+                        <label><input type="radio" name="plotter_tasks_rating" value="3">3</label>
+                        <label><input type="radio" name="plotter_tasks_rating" value="4">4</label>
+                        <label><input type="radio" name="plotter_tasks_rating" value="5">5</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>6. Архитектурные решения</h3>
+                    <ul>
+                        <li>Как бы вы организовали систему логирования работы плоттера?</li>
+                        <li>Какие паттерны проектирования использовали бы в проекте?</li>
+                        <li>Как обеспечить масштабируемость системы?</li>
+                    </ul>
+                    <div class="answer">
+                        <textarea name="architecture" placeholder="Введите ответ..."></textarea>
+                    </div>
+                    <div class="rating">
+                        <label>Оценка: </label>
+                        <label><input type="radio" name="architecture_rating" value="1">1</label>
+                        <label><input type="radio" name="architecture_rating" value="2">2</label>
+                        <label><input type="radio" name="architecture_rating" value="3">3</label>
+                        <label><input type="radio" name="architecture_rating" value="4">4</label>
+                        <label><input type="radio" name="architecture_rating" value="5">5</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Общие вопросы -->
+            <div class="section">
+                <h2>Общие вопросы</h2>
+                
+                <div class="question">
+                    <h3>7. Опыт и мотивация</h3>
+                    <ul>
+                        <li>Расскажите о вашем опыте работы с подобными системами.</li>
+                        <li>Как вы оцениваете сроки выполнения проекта (2-3 недели)?</li>
+                        <li>Какие сложности вы видите в проекте?</li>
+                        <li>Готовы ли вы к долгосрочному сотрудничеству?</li>
+                    </ul>
+                    <div class="answer">
+                        <textarea name="experience" placeholder="Введите ответ..."></textarea>
+                    </div>
+                    <div class="rating">
+                        <label>Оценка: </label>
+                        <label><input type="radio" name="experience_rating" value="1">1</label>
+                        <label><input type="radio" name="experience_rating" value="2">2</label>
+                        <label><input type="radio" name="experience_rating" value="3">3</label>
+                        <label><input type="radio" name="experience_rating" value="4">4</label>
+                        <label><input type="radio" name="experience_rating" value="5">5</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Сохранить результаты собеседования</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('interviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Здесь можно добавить логику сохранения результатов
+            const formData = new FormData(this);
+            const results = {};
+            
+            for (let [key, value] of formData.entries()) {
+                results[key] = value;
+            }
+            
+            console.log('Результаты собеседования:', results);
+            alert('Результаты собеседования сохранены!');
+        });
+    </script>
+</body>
+</html> 

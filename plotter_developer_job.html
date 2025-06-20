@@ -160,6 +160,48 @@
             display: inline-block;
             margin-bottom: 15px;
         }
+        
+        /* Responsive image styles */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .main-image-container img,
+        .main-image-container video {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+        }
+        
+        .thumbnails {
+            padding: 0 10px;
+        }
+        
+        .thumbnails img {
+            max-width: 80px;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-btn {
+                display: none;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .carousel-container {
+                margin: 0 10px;
+            }
+            
+            .main-image-container {
+                margin: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -178,11 +220,12 @@
         </div>
 
         <div class="salary">
-            💰 Бюджет: 150,000 - 300,000 ₽ (зависит от опыта и качества работы)
+            💰 Бюджет: 120,000 - 150,000 ₽ (зависит от опыта и качества работы)
         </div>
 
         <div class="section">
             <h2>🎯 О проекте</h2>
+            <p><strong>Мы готовы рассмотреть выдающихся студентов и олимпиадников — укажите это в квизе!</strong></p>
             <p>Разрабатываем <strong>облачную систему для управления режущими плоттерами</strong> в сфере производства защитных покрытий для телефонов. Система уже работает с плоттерами GRAPTHTEC CE7000-40, теперь нужно добавить поддержку <strong>Silhouette Cameo 4</strong>.</p>
             
             <div class="highlight">
@@ -262,7 +305,7 @@
         <div class="section">
             <h2>📅 Сроки и условия</h2>
             <ul>
-                <li><strong>Срок выполнения:</strong> 1-2 месяца</li>
+                <li><strong>Срок выполнения:</strong> 2-3 недели</li>
                 <li><strong>Формат работы:</strong> Удаленно, фриланс</li>
                 <li><strong>Оплата:</strong> Поэтапно (30% - 40% - 30%)</li>
                 <li><strong>Начало:</strong> Немедленно после согласования</li>
